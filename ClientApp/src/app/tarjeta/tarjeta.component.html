@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input formControlName="titular" placeholder="Titular" />
+  <input formControlName="numeroTarjeta" placeholder="Número tarjeta" />
+  <input formControlName="fechaExpiracion" placeholder="MM/AA" />
+  <!-- usar type="number" ayuda en UI, pero el valor puede llegar como string: por eso convertimos -->
+  <input formControlName="cvv" placeholder="CVV" type="number" inputmode="numeric" />
+  <button type="submit">Enviar</button>
+</form>
