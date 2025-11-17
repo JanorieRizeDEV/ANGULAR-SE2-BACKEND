@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EBTarjeta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a4b97f93dfc2a604bad08faa8af46994753d1db")]
 [assembly: System.Reflection.AssemblyProductAttribute("EBTarjeta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EBTarjeta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

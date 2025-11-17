@@ -77,3 +77,4 @@ C:\Users\Eduardo Morales\Desktop\Angular\EBTarjeta\EBTarjeta\obj\Debug\net8.0\re
 C:\Users\Eduardo Morales\Desktop\Angular\EBTarjeta\EBTarjeta\obj\Debug\net8.0\EBTarjeta.pdb
 C:\Users\Eduardo Morales\Desktop\Angular\EBTarjeta\EBTarjeta\obj\Debug\net8.0\EBTarjeta.genruntimeconfig.cache
 C:\Users\Eduardo Morales\Desktop\Angular\EBTarjeta\EBTarjeta\obj\Debug\net8.0\ref\EBTarjeta.dll
+C:\Users\Eduardo Morales\Desktop\Angular\EBTarjeta\EBTarjeta\obj\Debug\net8.0\EBTarjeta.sourcelink.json

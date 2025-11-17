@@ -4,18 +4,22 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EBTarjeta.Controller
 {
+    // Controlador API para operaciones CRUD sobre tarjetas de crédito.
+    // Expone endpoints REST: obtener lista, crear, actualizar y eliminar tarjetas.
     [Route("api/[controller]")]
     [ApiController]
     public class TarjetaController : ControllerBase
     {       
         private readonly ApplicationDbContext _context;
 
+        // El contexto de datos se inyecta por DI; usado para acceder al DbSet de tarjetas.
         public TarjetaController(ApplicationDbContext context)
         {
             _context = context;
         }
 
         // GET: api/<TarjetaController>
+        // Devuelve todas las tarjetas almacenadas. Maneja errores y devuelve BadRequest en caso de excepción.
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -31,6 +35,7 @@ namespace EBTarjeta.Controller
         }
 
         // POST api/<TarjetaController>
+        // Crea una nueva tarjeta. Valida Content-Type y el estado del modelo antes de persistir.
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] TarjetaCredito tarjeta)
         {
@@ -62,6 +67,7 @@ namespace EBTarjeta.Controller
         }
 
         // PUT api/<TarjetaController>/5
+        // Actualiza una tarjeta existente; comprueba que el Id de ruta coincida con el del cuerpo.
         [HttpPut("{Id}")]
         public async Task<IActionResult> Put(int Id, [FromBody] TarjetaCredito tarjeta)
         {
@@ -82,6 +88,7 @@ namespace EBTarjeta.Controller
         }
 
         // DELETE api/<TarjetaController>/5
+        // Elimina la tarjeta indicada por Id; devuelve NotFound si no existe.
         [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
